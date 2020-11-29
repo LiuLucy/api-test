@@ -41,7 +41,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb://localhost/api-dev',
+      uri: 'mongodb+srv://lucyliou:lucy0970@cluster-api.qm95v.mongodb.net/dev?retryWrites=true&w=majority',
       options: {
         debug: true
       }
@@ -51,7 +51,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://localhost/api'
+      uri: process.env.MONGODB_URI || 'mongodb+srv://lucyliou:lucy0970@cluster-api.qm95v.mongodb.net/dev?retryWrites=true&w=majority'
     }
   }
 }
